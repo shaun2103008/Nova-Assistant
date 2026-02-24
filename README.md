@@ -1,143 +1,53 @@
-# 🤖 Nova – Offline Voice Assistant (Python)
+Nova – Offline Voice Assistant (Python)
 
-Nova is a **lightweight, offline desktop voice assistant** built using Python. It focuses on **accurate command recognition**, fast responses, and zero cloud dependency — making it perfect for low‑spec laptops and privacy‑friendly usage.
+Nova is a lightweight, offline desktop voice assistant built using Python. It focuses on accurate command recognition, fast execution, and zero cloud dependency. The system is designed to run efficiently on low-spec machines while maintaining user privacy.
 
-This project was built as a **resume‑ready, GitHub‑worthy project** with clean structure and practical features.
+This project was developed as a practical implementation of speech recognition, system automation, and command processing in a fully offline environment.
 
----
+Features
 
-## ✨ Features
+Offline speech recognition using Vosk
 
-* 🎙️ **Offline Speech Recognition** (Vosk)
-* 🗣️ **Text‑to‑Speech responses** (pyttsx3)
-* 🌐 Open websites like:
+Text-to-speech responses using pyttsx3
 
-  * YouTube
-  * WhatsApp Web
-  * Gmail
-* 🖥️ Open system apps:
+Open commonly used websites (YouTube, WhatsApp Web, Gmail)
 
-  * Notepad
-  * Calculator
-* ⏰ Tell **time & date**
-* 📸 Take **screenshots**
-* 🧠 **Fuzzy command matching** (understands mispronunciations like *"war sap" → WhatsApp*)
-* 🔒 **No APIs, no internet required for speech**
-* ⚡ Optimized for **8GB RAM / low‑end CPUs**
+Launch system applications (Notepad, Calculator)
 
----
+Provide real-time date and time
 
-## 🧠 Why Nova?
+Capture screenshots
 
-Most voice assistants rely on cloud APIs and struggle with accents or low hardware.
+Fuzzy command matching to handle minor mispronunciations
 
-Nova is different:
+Fully offline execution (no cloud APIs required)
 
-* Runs **completely offline**
-* Uses **keyword + fuzzy matching** instead of unreliable LLM guesses
-* Designed to **do exactly what the user says** — not hallucinate
-* Easy to extend with new commands
+Optimized for systems with 8GB RAM or lower
 
----
+Design Philosophy
 
-## 🛠️ Tech Stack
+Most voice assistants rely heavily on cloud APIs and large language models, which introduce latency, privacy concerns, and unpredictable behavior.
 
-* **Python 3.9+**
-* **Vosk** – Offline speech recognition
-* **sounddevice** – Microphone audio input
-* **pyttsx3** – Text‑to‑speech
-* **pyautogui** – Screenshots & automation
+Nova is designed with a different approach:
 
----
+Fully offline architecture
 
-## 📂 Project Structure
+Deterministic command handling
 
-```
-Nova_Assistant/
-│── nova.py
-│── model/              # Vosk speech model (NOT pushed to GitHub)
-│── requirements.txt
-│── .gitignore
-│── README.md
-```
+Lightweight execution
 
----
+Modular and easily extensible structure
 
-## 📦 Installation
+The system prioritizes reliability and responsiveness over complex conversational capabilities.
 
-### 1️⃣ Clone the repository
+Tech Stack
 
-```bash
-git clone https://github.com/your-username/Nova-Assistant.git
-cd Nova-Assistant
-```
+Python 3.9+
 
-### 2️⃣ Create & activate virtual environment
+Vosk (offline speech recognition)
 
-```bash
-python -m venv venv
-venv\Scripts\activate   # Windows
-```
+sounddevice (microphone input handling)
 
-### 3️⃣ Install dependencies
+pyttsx3 (text-to-speech engine)
 
-```bash
-pip install -r requirements.txt
-```
-
-### 4️⃣ Download Vosk model
-
-Download a Vosk English model and extract it as:
-
-```
-Nova_Assistant/model/
-```
-
-(Models are intentionally excluded from GitHub to keep the repo clean.)
-
----
-
-## ▶️ Run Nova
-
-```bash
-python nova.py
-```
-
-Say **"hello"** to wake Nova, then try commands like:
-
-* "Open YouTube"
-* "Open war sap"
-* "What time is it"
-* "Open calci"
-* "Take screenshot"
-
----
-
-## 🚫 What Nova Does NOT Do (By Design)
-
-* ❌ No cloud APIs
-* ❌ No ChatGPT / LLM hallucinations
-* ❌ No background spying
-
-This keeps Nova **fast, predictable, and beginner‑friendly**.
-
----
-
-## 🚀 Future Improvements (Optional)
-
-* Volume control
-* Music playback
-* App launching via Start Menu
-* GUI interface
-
----
-
-## 👨‍💻 Author
-
-**Shaun Banis**
-Second‑year AI/ML student
-Built to learn real‑world voice systems and system automation
-
----
-
-⭐ If you like this project, consider starring the repository!
+pyautogui (automation and screenshots)
