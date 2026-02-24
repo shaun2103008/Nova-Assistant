@@ -1,53 +1,66 @@
-Nova – Offline Voice Assistant (Python)
+*Nova – Offline Voice Assistant (Python)*
+Nova is a lightweight, offline desktop voice assistant built using Python. It focuses on accurate command recognition, fast execution, and zero cloud dependency. The system is designed to run efficiently on low-spec machines while maintaining privacy and predictable behavior.
+This project demonstrates practical implementation of speech recognition, command parsing, and desktop automation in a fully offline environment.
 
-Nova is a lightweight, offline desktop voice assistant built using Python. It focuses on accurate command recognition, fast execution, and zero cloud dependency. The system is designed to run efficiently on low-spec machines while maintaining user privacy.
+*Overview*
+Nova enables users to interact with their system using voice commands without relying on cloud APIs or external AI services. The assistant is optimized for low hardware usage and prioritizes reliability over conversational complexity.
 
-This project was developed as a practical implementation of speech recognition, system automation, and command processing in a fully offline environment.
-
-Features
-
+*Features*
 Offline speech recognition using Vosk
-
 Text-to-speech responses using pyttsx3
-
-Open commonly used websites (YouTube, WhatsApp Web, Gmail)
-
-Launch system applications (Notepad, Calculator)
-
+Open commonly used websites:
+YouTube
+WhatsApp Web
+Gmail
+Launch system applications:
+Notepad
+Calculator
 Provide real-time date and time
-
 Capture screenshots
-
 Fuzzy command matching to handle minor mispronunciations
-
-Fully offline execution (no cloud APIs required)
-
+Fully offline execution (no internet required for speech processing)
 Optimized for systems with 8GB RAM or lower
 
-Design Philosophy
-
-Most voice assistants rely heavily on cloud APIs and large language models, which introduce latency, privacy concerns, and unpredictable behavior.
-
-Nova is designed with a different approach:
-
-Fully offline architecture
-
-Deterministic command handling
-
+*Design Approach*
+Unlike most modern assistants that depend on cloud APIs and large language models, Nova is designed with a deterministic and modular architecture.
+Key principles:
+Fully offline processing
+Keyword-based and fuzzy-matched command recognition
 Lightweight execution
-
-Modular and easily extensible structure
-
-The system prioritizes reliability and responsiveness over complex conversational capabilities.
+Clear command-response mapping
+Easy extensibility for adding new commands
+The system executes exactly what is requested without generating unpredictable outputs.
 
 Tech Stack
 
-Python 3.9+
+*Python 3.9+*
+Vosk – Offline speech recognition
+sounddevice – Microphone audio input
+pyttsx3 – Text-to-speech engine
+pyautogui – Automation and screenshot functionality
 
-Vosk (offline speech recognition)
+Project Structure
+Nova_Assistant/
+│── nova.py
+│── model/              # Vosk speech model (excluded from GitHub)
+│── requirements.txt
+│── .gitignore
+│── README.md
 
-sounddevice (microphone input handling)
+Example commands:
+"Open YouTube"
+"Open WhatsApp"
+"What time is it"
+"Open calculator"
+"Take screenshot"
 
-pyttsx3 (text-to-speech engine)
+Future Improvements:
+System volume control
+Music playback integration
+Start Menu application indexing
+Optional graphical user interface
 
-pyautogui (automation and screenshots)
+*Author*
+Shaun Banis
+Second-year AI/ML student
+Built to explore real-world speech systems, system automation, and offline assistant design.
