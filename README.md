@@ -4,9 +4,11 @@ Nova is a lightweight, offline desktop voice assistant built using Python. It fo
 This project demonstrates practical implementation of speech recognition, command parsing, and desktop automation in a fully offline environment.
 
 *Overview*
+
 Nova enables users to interact with their system using voice commands without relying on cloud APIs or external AI services. The assistant is optimized for low hardware usage and prioritizes reliability over conversational complexity.
 
 *Features*
+
 Offline speech recognition using Vosk
 Text-to-speech responses using pyttsx3
 Open commonly used websites:
@@ -23,6 +25,7 @@ Fully offline execution (no internet required for speech processing)
 Optimized for systems with 8GB RAM or lower
 
 *Design Approach*
+
 Unlike most modern assistants that depend on cloud APIs and large language models, Nova is designed with a deterministic and modular architecture.
 Key principles:
 Fully offline processing
