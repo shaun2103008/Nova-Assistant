@@ -52,6 +52,7 @@ Nova_Assistant/
 │── README.md
 
 Example commands:
+
 "Open YouTube"
 "Open WhatsApp"
 "What time is it"
@@ -59,12 +60,14 @@ Example commands:
 "Take screenshot"
 
 Future Improvements:
+
 System volume control
 Music playback integration
 Start Menu application indexing
 Optional graphical user interface
 
 *Author*
+
 Shaun Banis
 Second-year AI/ML student
 Built to explore real-world speech systems, system automation, and offline assistant design.
